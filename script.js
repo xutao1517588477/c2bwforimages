@@ -15,7 +15,7 @@ document.getElementById('fileInput').addEventListener('change', function () {
 
   Array.from(files).forEach(file => {
     if (file.type.startsWith('image/gif')) {
-      alert(`文件 "${file.name}" 是 GIF 格式，将被转换为png格式`);
+      alert(`文件 "${file.name}" 是 GIF 格式，将只保留第一帧进行转换。`);
       return;
     }
   });
